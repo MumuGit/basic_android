@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#f57257</color>
+    <color name="colorPrimary">#f46444</color>
+    <color name="navigationBarColor">#f46444</color>
+    <color name="colorPrimaryDarkTrans">#CCf57257</color>
+    <color name="devider">#EBEBEB</color>
+    <color name="black">#000000</color>
+    <color name="darkgrey">#C0C0C0</color>
+    <color name="darkyellow">#FFCC33</color>
+</resources>
