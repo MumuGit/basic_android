@@ -1,4 +1,4 @@
-package com.yb.demo;
+package com.yb.android;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

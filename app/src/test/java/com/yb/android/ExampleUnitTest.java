@@ -1,4 +1,4 @@
-package com.yb.demo;
+package com.yb.android;
 
 import org.junit.Test;
 
