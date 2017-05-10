@@ -36,7 +36,7 @@ public class ExportExcelActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_second);
+        setContentView(R.layout.activity_excel);
         create_tv = (TextView) findViewById(R.id.create_tv);
         create_tv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +44,6 @@ public class ExportExcelActivity extends Activity {
                 mThread.start();
             }
         });
-        Log.e("ExportExcelActivity", "permission");
         mThread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -52,14 +51,12 @@ public class ExportExcelActivity extends Activity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     requestPermissions(permissions, 0);
                 }
-                Log.e("ExportExcelActivity", "permission");
                 File file = new File(Environment.getExternalStorageDirectory() + "/download/" + "yb_" + Calendar.getInstance(Locale.CHINA).getTimeInMillis() + ".xls");
                 if (file.exists()) {
                     file.delete();
                 }
                 WritableWorkbook workbook = null;
                 try {
-                    Log.e("ExportExcelActivity", "create");
                     workbook = Workbook.createWorkbook(file);
                     WritableSheet sheet = workbook.createSheet("意帮", 0);
                     for (int i = 0; i < 20; i++) {
