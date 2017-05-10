@@ -25,7 +25,7 @@ import com.ybslux.android.R;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2017/5/2 0002.
+ * 图表
  */
 
 public class ChartActivity extends Activity {

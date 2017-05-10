@@ -46,6 +46,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * 基于高德地图的路径规划、导航
+ */
 public class RestRouteShowActivity extends Activity implements AMapNaviListener, OnClickListener, OnCheckedChangeListener {
     private boolean congestion, cost, hightspeed, avoidhightspeed;
     /**

@@ -23,6 +23,9 @@ import java.util.Map;
 
 import main.java.com.UpYun;
 
+/**
+ * 文件上传、查看目录、查看文件信息
+ */
 
 public class FileActivity extends AppCompatActivity {
     //空间名

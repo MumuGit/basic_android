@@ -23,7 +23,9 @@ import com.autonavi.tbt.TrafficFacilityInfo;
 import com.ybslux.android.util.TTSController;
 import com.ybslux.android.R;
 
-
+/**
+ * 基于高德地图的导航功能
+ */
 public class RouteNaviActivity extends Activity implements AMapNaviListener, AMapNaviViewListener {
 
     AMapNaviView mAMapNaviView;

@@ -26,7 +26,7 @@ import jxl.write.WriteException;
 import jxl.write.biff.RowsExceededException;
 
 /**
- * Created by Administrator on 2017/4/27 0027.
+ * 导出excel
  */
 
 public class ExportExcelActivity extends Activity {

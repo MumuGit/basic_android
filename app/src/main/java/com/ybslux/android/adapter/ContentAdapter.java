@@ -15,7 +15,7 @@ import com.ybslux.android.R;
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/4/21 0021.
+ * Index页adapter
  */
 
 public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.MyViewHolder> {

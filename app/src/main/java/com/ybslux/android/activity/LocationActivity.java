@@ -13,6 +13,9 @@ import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.ybslux.android.R;
 
+/**
+ * 基于高德地图的定位功能
+ */
 public class LocationActivity extends AppCompatActivity implements AMapLocationListener {
 
     public AMapLocationClient mLocationClient = null;

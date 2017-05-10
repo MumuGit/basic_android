@@ -23,6 +23,9 @@ import cn.bingoogolapple.qrcode.core.BGAQRCodeUtil;
 import cn.bingoogolapple.qrcode.zxing.QRCodeDecoder;
 import cn.bingoogolapple.qrcode.zxing.QRCodeEncoder;
 
+/**
+ * 生成二维码
+ */
 public class QRCodeGenerateActivity extends AppCompatActivity {
     private ImageView mChineseIv;
     private ImageView mEnglishIv;
