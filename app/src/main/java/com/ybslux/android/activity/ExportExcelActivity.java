@@ -44,6 +44,7 @@ public class ExportExcelActivity extends Activity {
                 mThread.start();
             }
         });
+        //excel的读写均可使用此工具，此处未做内存优化处理
         mThread = new Thread(new Runnable() {
             @Override
             public void run() {

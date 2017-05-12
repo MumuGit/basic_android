@@ -16,9 +16,11 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        //极光推送初始化
         JPushInterface.init(this);
-        JPushInterface.setDebugMode(true);
+        JPushInterface.setDebugMode(false);
 //        UMShareAPI.init(this,"591156ce5312dd874f0004df");
+        //友盟分享初始化
         UMShareAPI.get(this);
         PlatformConfig.setWeixin("wx967daebe835fbeac", "5bb696d9ccd75a38c8a0bfe0675559b3");
         PlatformConfig.setQQZone("100424468", "c7394704798a158208a74ab60104f0ba");

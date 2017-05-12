@@ -30,7 +30,7 @@ import com.ybslux.android.util.SaveBitmapUtil;
 import java.io.FileNotFoundException;
 
 /**
- * Created by Administrator on 2017/4/24 0024.
+ * 图片格式转换
  */
 
 public class ImageTransferActivity extends Activity implements OnClickListener {

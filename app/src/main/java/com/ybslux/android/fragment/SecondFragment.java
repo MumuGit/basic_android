@@ -15,12 +15,13 @@ import com.ybslux.android.R;
 
 
 /**
- * Created by Administrator on 2017/4/20 0020.
+ * 分享功能
+ * 需初始化{@link com.ybslux.android.App}
  */
 
 public class SecondFragment extends Fragment implements View.OnClickListener {
     MyShareListener umShareListener = new MyShareListener();
-    TextView create_tv;
+    TextView share_tv;
 
     @Nullable
     @Override
@@ -31,14 +32,15 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        create_tv = (TextView) getActivity().findViewById(R.id.create_tv);
-        create_tv.setOnClickListener(this);
+        share_tv = (TextView) getActivity().findViewById(R.id.share_tv);
+        share_tv.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.create_tv:
+            case R.id.share_tv:
+                //withText()处可替换成其他任意内容，见开发文档
                 new ShareAction(getActivity()).withText("hello")
                         .setDisplayList(SHARE_MEDIA.SINA, SHARE_MEDIA.QQ, SHARE_MEDIA.WEIXIN)
                         .setCallback(umShareListener).open();

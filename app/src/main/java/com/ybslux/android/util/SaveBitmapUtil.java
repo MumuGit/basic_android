@@ -35,7 +35,7 @@ public class SaveBitmapUtil {
     public interface saveListener {
         void result(Bitmap bitmap, String msg);
     }
-
+//存储文件后缀名
     public enum SaveBitmapCompressFormat {
         JPEG(".jpg"),
         PNG(".png"),
@@ -69,9 +69,11 @@ public class SaveBitmapUtil {
             listener.result(null, "请传入bitmap");
             return;
         }
+//        文件名为空则默认命名“yibang_时间”
         if (TextUtils.isEmpty(name)) {
             name = "yibang_" + Calendar.getInstance(Locale.CHINA).getTimeInMillis();
         }
+//        导出类型未选择则默认导出为WEBP格式
         if (type == null) {
             type = WEBP;
         }
@@ -89,6 +91,7 @@ public class SaveBitmapUtil {
         }
         final String finalName = name;
         final SaveBitmapCompressFormat finalType = type;
+//        子线程处理图片
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -101,6 +104,7 @@ public class SaveBitmapUtil {
                     }
                     FileOutputStream out;
                     out = new FileOutputStream(file);
+//                    压缩质量为100，可按需求调整，也可在options中调整分辨率
                     bitmap.compress(bct, 100, out);
                     out.flush();
                     out.close();
