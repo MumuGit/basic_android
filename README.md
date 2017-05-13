@@ -12,4 +12,4 @@
 - [高德地图语音导航](https://github.com/kamaslau/basic_android/blob/master/app/src/main/java/com/ybslux/android/activity/RouteNaviActivity.java)
 - [二维码、条形码生成](https://github.com/kamaslau/basic_android/blob/master/app/src/main/java/com/ybslux/android/activity/QRCodeGenerateActivity.java) 基于开源项目[BGAQRCode](https://github.com/bingoogolapple/BGAQRCode-Android),[条形码生成](https://github.com/kamaslau/basic_android/blob/master/app/src/main/java/com/ybslux/android/util/RxBarCode.java)已独立封装
 - [二维码、条形码扫描](https://github.com/kamaslau/basic_android/blob/master/app/src/main/java/com/ybslux/android/activity/QRCodeScanActivity.java)
-- [微信支付、支付宝支付（待上传）]()
+- [微信支付、支付宝支付](https://github.com/kamaslau/basic_android/blob/develope/app/src/main/java/com/ybslux/android/activity/PayActivity.java)
