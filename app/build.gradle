@@ -12,7 +12,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [
-                JPUSH_PKGNAME : applicationId,
+                JPUSH_PKGNAME: applicationId,
                 JPUSH_APPKEY : "a2fa16a8f8fcc43eeba11c6a", //JPush上注册的包名对应的appkey.
 //                JPUSH_CHANNEL : "自定义渠道名称", //用户渠道统计的渠道名称
         ]
@@ -47,5 +47,6 @@ dependencies {
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
     compile 'com.upyun:java-sdk:3.14'
     compile 'com.amap.api:location:3.4.0'
-    compile 'com.android.support:cardview-v7:25.+'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
 }

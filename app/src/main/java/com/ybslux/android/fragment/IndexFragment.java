@@ -12,6 +12,7 @@ import com.ybslux.android.activity.ExportExcelActivity;
 import com.ybslux.android.activity.FileActivity;
 import com.ybslux.android.activity.ImageTransferActivity;
 import com.ybslux.android.activity.LocationActivity;
+import com.ybslux.android.activity.PayActivity;
 import com.ybslux.android.activity.QRCodeGenerateActivity;
 import com.ybslux.android.activity.QRCodeScanActivity;
 import com.ybslux.android.activity.RestRouteShowActivity;
@@ -39,6 +40,7 @@ public class IndexFragment extends Fragment {
         list.add(LocationActivity.class);
         list.add(FileActivity.class);
         list.add(RestRouteShowActivity.class);
+        list.add(PayActivity.class);
         adapter = new ContentAdapter(list);
         content_rv.setLayoutManager(new LinearLayoutManager(getContext()));
         content_rv.setAdapter(adapter);
