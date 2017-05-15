@@ -184,13 +184,22 @@
         <meta-data
             android:name="JPUSH_APPKEY"
             android:value="a2fa16a8f8fcc43eeba11c6a"/>
-
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
         <activity android:name=".activity.LocationActivity">
         </activity>
         <activity android:name=".activity.RouteNaviActivity"/>
         <activity android:name=".activity.RestRouteShowActivity"/>
-        <activity android:name=".activity.PayActivity">
-        </activity>
+        <activity android:name=".activity.PayActivity"/>
     </application>
 
 </manifest>
